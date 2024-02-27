@@ -1,0 +1,11 @@
+:root{
+    --primary-colour: #DFC72D;
+    --primary-colour-lighter: #EEDE99;
+    --text-all: #F6EDDE;
+}
+
+nav{
+
+    background-color: black;
+    color:#F6EDDE;
+}
