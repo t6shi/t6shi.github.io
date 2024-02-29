@@ -2,8 +2,11 @@
     --primary-colour: #DFC72D;
     --primary-colour-lighter: #EEDE99;
     --text-all: #F6EDDE;
+    --text-darker: #000000
+
 }
 
+*
 nav{
    
     width: 100%;
@@ -35,10 +38,15 @@ li{
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       height: 100vh;  
+       height: 100vh;  width: 100vw;
        text-align: center; }
 
 #sec1 p :first-of-type{ margin-bottom:rem}
+
+@keyframes alternatetyping {
+    from { width: 0; }
+    to { width: 100%; }
+}
 
 
 #sec1 h1
@@ -48,7 +56,17 @@ li{
     font-style: normal;
     font-size: 9rem; 
     margin: 0 auto;
-    line-height: 11rem;;
+    line-height: 11rem;
+    border-right: 0rem, solid, #F6EDDE;
+    width: 100%; 
+    white-space: nowrap;
+    overflow: hidden;
+    animation:alternatetyping 2s steps(18),
+    cursor .4s step-end infinite alternate;
+   }
+
+   @keyframes cursor{ 
+    100% { border-color: #F6EDDE}
    }
 
 #sec1 h3
@@ -150,9 +168,27 @@ li{
             margin-bottom: 0rem;
             line-height:0rem;}
 
+            .type
+            { display: inline-block;}
+
     
-    
-    
+    @media (max-width: 720px)
+    { nav
+        {font-size: 2rem;}
+
+        #sec1
+        {margin-left: 19rem;
+        padding-top: 30rem;}
+
+        #sec1 h1
+        { font-size: 15rem;}
+        #sec1 h3
+        { font-size: 7rem;
+          padding-bottom: 4rem}
+        #sec1 h6
+        { font-size: 4rem;
+          padding-top: 3rem;}
+    }
 
 
     
