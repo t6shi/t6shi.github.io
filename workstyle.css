@@ -91,7 +91,7 @@ a{ text-decoration: none; color: #FFFFFF;}
 
 
 
-@media (max-width: 780px)
+@media only screen and ( min-width: 392px) and (max-width: 780px)
 
 {
     *{ margin:0; padding:0;}
@@ -112,9 +112,32 @@ a{ text-decoration: none; color: #FFFFFF;}
    p { padding: 1rem;}
 
 
-   
+}
 
+@media only screen and (max-width:391px) 
 
+{.icons 
+    { font-size: 1rem; margin-right: 0.5rem;}
+
+    .links
+    { font-size:0.75rem; margin-right:0.5rem;}
+
+    nav li 
+    { margin-right:1rem;}
+
+    .container
+    {display:flex; flex-direction: column; justify-content:center; 
+     }
+     
+     .card{ width:90vw; height:20vh; margin-left:2rem; margin-top:3rem;margin-left:1.35rem;}
+     .card1{ width:90vw; height:20vh; margin-left:2rem; margin-top:2rem;margin-left:1.35rem;}
+     .card2{ width:90vw; height:20vh; margin-left:2rem; margin-top:2rem;margin-left:1.35rem;}
+     .card3{ width:90vw; height:20vh; margin-left:2rem; margin-top:2rem;margin-left:1.35rem;}
+  
+      h2
+     { font-size: 1.5rem; margin-top: 1rem; }
+  
+     p { font-size: 1rem; padding: 1rem;}
 
 
 }
