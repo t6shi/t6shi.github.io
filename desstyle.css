@@ -223,15 +223,15 @@ nav li{
            font-size: 1.5rem; }
 
         .inputmail
-        {color: #F6EDDE; background-color:#F6EDDE;
-         border:   0.15rem solid black;
-         border-radius: 0.75rem;
-         outline: none; 
-         padding: 0.15rem;
+        { color: transparent; background-color:#F6EDDE;
+          border:   0.15rem solid black;
+          border-radius: 0.75rem;
+          outline: none; 
+          padding: 0.15rem;
          }
 
          .inputfeedback
-         { color: #F6EDDE; background-color:#F6EDDE;
+         { color: transparent ; background-color: #F6EDDE;
             border: 0.15rem solid black;
             border-radius: 0.75rem;
             padding: 0.15rem;
@@ -259,11 +259,16 @@ nav li{
             padding: 0.5rem 1rem;
             margin-left:12rem;}
 
+            .soc{
+              font-size: 3rem;
+              color: black;
+          }
+
           
            
     
     
-    @media (max-width: 780px)
+    @media only screen and ( min-width: 392px) and (max-width: 780px)
     {  *{ margin:0; padding:0;}
 
         nav
@@ -349,12 +354,118 @@ nav li{
          #contact form
          { margin-top: -8rem;
            margin-left: 8rem;}
+        }
+
+         @media only screen and (max-width:391px) 
+         { .icons 
+           { font-size: 1rem; margin-right: 0.5rem;}
+
+           .links
+           { font-size:0.75rem; margin-right:0.5rem;}
+
+           nav li 
+           { margin-right:1rem;}
+          #sec1 h1
+          { font-size: 5rem; line-height: 7rem;}
+          #sec1 h3
+          { font-size: 2rem;}
+          #sec1 h6
+          { font-size: 2rem; }
+  
+          
+          *{ margin:0; padding:0;}
+            
+            #sec1
+            { width: 100vw; }
+            
+            .stuffnform
+            {margin-left:4rem;}
+
+            #about img 
+            { width:200px;
+              padding-top: 10rem;padding-bottom: -3rem; padding-right: 4rem;}
+
+              #about 
+              { background-color: #000000;          
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+              
+                
+              }
+      
+              #about .content
+              { margin-top: 5vh; margin-right: 6vh;; padding:0; width: 100vw; height: 100vh;
+               text-align: center; ;} 
+                
+               #about h2 { font-size:2rem;}
+               #about h4{ font-size: 1rem;
+                           line-height: 2rem;}
+
+               #about p {  font-size: 1rem; line-height:2rem;};
+
+               #contact.stuffnform
+                { display: flex;
+                flex-direction: column;}
+
+
+               .stuff{ height: 11vh;;}
+
+
+               .idk
+               { font-size: 2rem; text-align: right; width: 130px;}
+
+               #contact p 
+               { font-size: 1rem; width: 90vw; margin-left: -2rem; margin-right: 0rem; line-height: 1.5rem; margin-top: 2rem;}
+
+               .socwrap
+               { margin-left:0rem; padding-left:0rem; margin-top:2rem; height: 6vh;}
+
+               #contact .soc
+               { font-size:1rem; margin-left:3rem; margin-top:2.75rem; }
+
+               
+               
+
+               #contact .stuff
+               { width: 40vw;}
+
+               #contact form
+               { margin-left:-15rem; width: 83vw; margin-top:23rem; }
+                
+               button 
+               { margin-left: 7.5rem;}
+
+               a
+               { font-size: 1rem;}
+
+               #contact pre 
+               { font-size: 5rem;
+                 text-align: left;
+                margin-left: -12rem;
+                line-height: 3.75rem;}
+
+
+               
+
+                
 
 
         
-    
-    
-    }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        }
          
            #contact
            {width:100vw; height: 100vh;}
@@ -366,5 +477,3 @@ nav li{
 
     
     
-
-
